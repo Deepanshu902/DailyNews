@@ -1,0 +1,106 @@
+/* General Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f3f3f3;
+}
+
+/* Image Styling */
+img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover; /* Ensures the image doesn't stretch or distort */
+}
+
+/* Heading */
+.heading-container {
+  background-color: #cb202d;
+  color: #ffffff;
+  font-size: 2.5em;
+  padding: 0.8em 0;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 10px 50px 0 rgba(2, 0, 31, 0.3);
+}
+
+.heading-container h4 {
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+
+/* Container for News Cards */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adds space between items */
+  width: 90%;
+  margin: 5em auto 2em; /* Adjust margin for space under the header */
+  gap: 1em; /* Adds space between the cards */
+}
+
+/* News Card Styling */
+.news-card {
+  flex: 1 1 calc(50% - 1em); /* Flex property for cards: each card takes up 50% minus the gap */
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 15px rgba(85, 85, 85, 0.2);
+  margin: 1em 0;
+  border-radius: 15px;
+}
+
+/* News Card Image */
+.news-card img {
+  border-radius: 15px 15px 0 0; /* Rounded top corners for the image */
+}
+
+/* News Content Styling */
+.news-content {
+  padding: 1em;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.news-title {
+  font-weight: 600;
+  color: #0b0028;
+}
+
+.news-description {
+  color: #6f6f6f;
+  text-align: justify;
+  margin: 0.8em 0 1em 0;
+}
+
+/* Read More Button */
+.view-button {
+  text-decoration: none;
+  background-color: #cb202d;
+  color: #ffffff;
+  width: 7em;
+  text-align: center;
+  padding: 0.3em 0.2em;
+  border-radius: 5px;
+  display: inline-block;
+  align-self: flex-start; /* Align button to the left */
+}
+
+.view-button:hover {
+  background-color: #a0161e; /* Slightly darker on hover */
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+}
